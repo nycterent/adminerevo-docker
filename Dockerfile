@@ -23,7 +23,7 @@ RUN apt-get update \
         git \
     && rm -rf /var/lib/apt/lists/*
 
-RUN	docker-php-ext-install mysqli
+RUN	docker-php-ext-install mysqli pgsql
 
 COPY	*.php /var/www/html/
 
